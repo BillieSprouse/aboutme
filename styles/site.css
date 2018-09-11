@@ -1,0 +1,31 @@
+body{
+    
+    background-image: url("../photos/pexels-photo-1205301.jpeg");
+    
+}
+
+  
+header {
+    background: #111;
+    color: #ccc;
+    height:150px;
+    line-height: 150px
+    
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main{
+    margin: 25px;
+
+}
+
+ul{
+    list-style-type: circle;
+}
+footer{
+    background: #ccc;
+}
