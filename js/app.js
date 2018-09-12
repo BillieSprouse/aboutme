@@ -1,5 +1,8 @@
 'use strict';
 
+var correctAnswersTotal = 0;
+
+
 var name = prompt('What is your name?');
 console.log('CurrentUserName ' + name);
 alert('Hi ' + name + ' Welcome to Our Fun Guessing Game');
@@ -16,6 +19,7 @@ if(petOwned === 'YES'|| petOwned === 'Y')
     {
     console.log('petOwnedNeg ' + petOwned);
     alert('Sadly, that is the right answer');
+    correctAnswersTotal++;
 }else{
     alert('The answer is not valid. Please Enter YES or NO');
     console.log('petOwnedInvalid');
@@ -32,6 +36,7 @@ if(runMileage === 'YES'|| runMileage === 'Y')
 {
     console.log('negRegRunMileage ' + runMileage);
     alert("That's right I have not yet ran that far");
+    correctAnswersTotal++;
 }else{
     alert('The answer is not valid. Please Enter YES or NO');
     console.log('runMileageInvalid');
@@ -48,6 +53,7 @@ if(myColor === 'YES'|| myColor === 'Y')
 {
     console.log('negRegMyColor ' + myColor);
     alert("Red is not my fave but pink is!");
+    correctAnswersTotal++;
 }else{
     alert('The answer is not valid. Please Enter YES/Y or NO/Y');
     console.log('runMileageInvalid');
@@ -60,6 +66,7 @@ if(flightHistory === 'YES'|| flightHistory === 'Y')
     {
     console.log('yesRegFlightHIstory ' + flightHistory);
     alert('Yep, I have flown too many times in my life,not a fan.');
+    correctAnswersTotal++;
 }else if(flightHistory === 'NO' || flightHistory === 'N')
 {
     console.log('negRegFlightHistory ' + flightHistory);
@@ -76,6 +83,7 @@ if(tripHistory === 'YES'|| tripHistory === 'Y')
     {
     console.log('yesRegTripHistory ' + tripHistory);
     alert('Yep, I lived there for 2 years');
+    correctAnswersTotal++;
 }else if(tripHistory === 'NO' || tripHistory === 'N')
 {
     console.log('negRegTripHistory ' + tripHistory);
@@ -94,6 +102,7 @@ for(var i = 0; i < 4; i ++ ) {
     console.log('beforeIfNumberGuess ' + numberGuess);
     if(numberGuess === 3){
         alert('Awesome! You Guessed Right!');
+        correctAnswersTotal++;
         console.log('correctNumberGuess ' + numberGuess);
         break;
     }else if(numberGuess < 3){
@@ -106,13 +115,40 @@ for(var i = 0; i < 4; i ++ ) {
 
     }else{
         alert('Please, try again');
-        
+      
     }
-    
-        //alert('Guess Again');
+}
+
+var myAnswers = ['ICELAND', 'JAPAN','SOUTH KOREA','GREECE'];
+for(var i = 0; i < 6; i++ ) {
+
+    console.log('trackingVarI ' + i );
+    var countriesVisited= prompt('Name some countries I have visited');
+    var countriesVisited = countriesVisited.toUpperCase();
+    console.log('countriesVisited is ' + countriesVisited);
+    for(var j =0; j < myAnswers.length; j++) {
+        console.log('incrementVarJ ' + j);
+        if(countriesVisited === myAnswers[j] ){
+            alert('Yes, you have guessed right I visited ' + myAnswers);
+            correctAnswersTotal++;
+            i = 6;
+            break;
+        }
+        console.log('index ' + myAnswers[j]);
+    }
+    if( i >= 5){
+        alert('Sorry, you are out guesses. I have visited ' + myAnswers);
+
+    }
+    alert('Hi ' + name + ' You have a score of ' + correctAnswersTotal);
+}
     
 
-}
+        
+
+
+
+        //alert('Guess Again');
 // tripHistory = tripHistory.toUpperCase();
 // console.log('tripHistory is ' + tripHistory);
 // if(tripHistory === 'YES'|| tripHistory === 'Y')
