@@ -1,21 +1,46 @@
-body{
-    
-    background-image: url("../photos/pexels-photo-1205301.jpeg");
-    
+body {
+    background-blend-mode: lighten;
+    background-image: url(../photos/pexels-photo-1044988.jpeg)                                   
 }
 
-  
+
 header {
     background: #111;
-    color: #ccc;
-    height:150px;
-    line-height: 150px
+    color: bisque;  
+    height:180px;
+    padding: 10px;
+    /* line-height: 150px; */
     
 }
 
 h1{
+    
     font-size: 24px;
     font-weight: bold;
+}
+
+h2{
+    align-content: center;
+    font-family: serif;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+}
+
+h3{
+    align-content: center;
+    font-family: serif;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+
+}
+#CompanyPhoto{
+    /* Could not get photo to be block item versus inline. Chose to make header height bigger. */
+    /* display: block; */
+    
+    
+
 }
 
 main{
@@ -23,9 +48,24 @@ main{
 
 }
 
-ul{
-    list-style-type: circle;
+ol{
+    background-color: rgb(15, 15, 15);
+    color: bisque;
+    font-size: 15px;
+    list-style-type: disc; 
 }
+ul{
+    background-color: rgb(15, 15, 15);
+    color: bisque;
+    font-size: 15px;
+    list-style-type: disc;
+      
+    
+}
+
+
 footer{
-    background: #ccc;
+    background: rgb(15, 15, 15);
+    color: bisque;
+    
 }
