@@ -79,12 +79,54 @@ if(tripHistory === 'YES'|| tripHistory === 'Y')
 }else if(tripHistory === 'NO' || tripHistory === 'N')
 {
     console.log('negRegTripHistory ' + tripHistory);
-    alert("Too bad, you guessed wrong..");
+    alert('Too bad, you guessed wrong..');
 }else{
     alert('The answer is not valid. Please Enter YES/Y or NO/N');
     console.log('tripHistoryInvalid');
 }
 
+
+for(var i = 0; i < 4; i ++ ) {
+
+    console.log('trackingVarI ' + i );
+    var numberGuess = prompt('How many marathons have I ran?');
+    numberGuess = parseInt(numberGuess, 10);
+    console.log('beforeIfNumberGuess ' + numberGuess);
+    if(numberGuess === 3){
+        alert('Awesome! You Guessed Right!');
+        console.log('correctNumberGuess ' + numberGuess);
+        break;
+    }else if(numberGuess < 3){
+        console.log('tooLowNumberGuess ' + numberGuess);
+        alert('You are guessing too low, try again');
+    
+    }else if(numberGuess > 3){
+        console.log('tooHighNumberGuess ' + numberGuess);
+        alert('You are guessing too high, try again');
+
+    }else{
+        alert('Please, try again');
+        
+    }
+    
+        //alert('Guess Again');
+    
+
+}
+// tripHistory = tripHistory.toUpperCase();
+// console.log('tripHistory is ' + tripHistory);
+// if(tripHistory === 'YES'|| tripHistory === 'Y')
+    // {
+    // console.log('yesRegTripHistory ' + tripHistory);
+    // alert('Yep, I lived there for 2 years');
+// }else if(tripHistory === 'NO' || tripHistory === 'N')
+// {
+    // console.log('negRegTripHistory ' + tripHistory);
+    // alert("Too bad, you guessed wrong..");
+// }else{
+    // alert('The answer is not valid. Please Enter YES/Y or NO/N');
+    // console.log('tripHistoryInvalid');
+// }
 
 
 
