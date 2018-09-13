@@ -3,12 +3,16 @@
 var correctAnswersTotal = 0;
 
 
-var name = prompt('What is your name?');
+function customizePrompt() {
+var name =prompt('What is your name?');
 console.log('CurrentUserName ' + name);
 alert('Hi ' + name + ' Welcome to Our Fun Guessing Game');
 alert("Please answer each question with a 'YES'/Y or 'NO'/N" );
+}
+customizePrompt();
 
-var petOwned = prompt('Do I own a pet dragon?');
+function petOwned() {
+prompt('Do I own a pet dragon?');
 petOwned = petOwned.toUpperCase();
 console.log('petOwned is ' + petOwned);
 if(petOwned === 'YES'|| petOwned === 'Y')
@@ -24,8 +28,12 @@ if(petOwned === 'YES'|| petOwned === 'Y')
     alert('The answer is not valid. Please Enter YES or NO');
     console.log('petOwnedInvalid');
 }
+}
 
-var runMileage = prompt('Have I ran over 50 milese in one day?');
+petowned();
+
+function runMileage() {
+ prompt('Have I ran over 50 milese in one day?');
 runMileage = runMileage.toUpperCase();
 console.log('runMileage is ' + runMileage);
 if(runMileage === 'YES'|| runMileage === 'Y')
@@ -40,6 +48,7 @@ if(runMileage === 'YES'|| runMileage === 'Y')
 }else{
     alert('The answer is not valid. Please Enter YES or NO');
     console.log('runMileageInvalid');
+}
 }
 
 var myColor = prompt('Do I like the color red?');
