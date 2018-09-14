@@ -2,28 +2,35 @@
 
 var correctAnswersTotal = 0;
 
-
+function customizePrompt() {
 var name = prompt('What is your name?');
 console.log('CurrentUserName ' + name);
 alert('Hi ' + name + ' Welcome to Our Fun Guessing Game');
 alert("Please answer each question with a 'YES'/Y or 'NO'/N" );
-
-var petOwned = prompt('Do I own a pet dragon?');
-petOwned = petOwned.toUpperCase();
-console.log('petOwned is ' + petOwned);
-if(petOwned === 'YES'|| petOwned === 'Y')
-    {
-    console.log('yesreg ' + petOwned);
-    alert('No, I am not Daenerys');
-}else if(petOwned === 'NO' || petOwned === 'N')
-    {
-    console.log('petOwnedNeg ' + petOwned);
-    alert('Sadly, that is the right answer');
-    correctAnswersTotal++;
-}else{
-    alert('The answer is not valid. Please Enter YES or NO');
-    console.log('petOwnedInvalid');
 }
+
+customizePrompt();
+
+function petOwned() {
+    prompt('Do I own a pet dragon?');
+    petOwned = petOwned.toUpperCase();
+    console.log('petOwned is ' + petOwned);
+    if(petOwned === 'YES'|| petOwned === 'Y')
+        {
+        console.log('yesreg ' + petOwned);
+        alert('No, I am not Daenerys');
+    }else if(petOwned === 'NO' || petOwned === 'N')
+        {
+        console.log('petOwnedNeg ' + petOwned);
+        alert('Sadly, that is the right answer');
+        correctAnswersTotal++;
+    }else{
+        alert('The answer is not valid. Please Enter YES or NO');
+        console.log('petOwnedInvalid');
+    }
+}
+
+petOwned();
 
 var runMileage = prompt('Have I ran over 50 milese in one day?');
 runMileage = runMileage.toUpperCase();
@@ -124,7 +131,7 @@ for(var i = 0; i < 6; i++ ) {
 
     console.log('trackingVarI ' + i );
     var countriesVisited= prompt('Name some countries I have visited');
-    var countriesVisited = countriesVisited.toUpperCase();
+    countriesVisited = countriesVisited.toUpperCase();
     console.log('countriesVisited is ' + countriesVisited);
     for(var j =0; j < myAnswers.length; j++) {
         console.log('incrementVarJ ' + j);
@@ -144,7 +151,7 @@ for(var i = 0; i < 6; i++ ) {
 }
     
 
-        
+
 
 
 
