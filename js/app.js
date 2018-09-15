@@ -2,12 +2,19 @@
 
 var correctAnswersTotal = 0;
 
+<<<<<<< HEAD
 function customizePrompt() {
 var name = prompt('What is your name?');
+=======
+
+function customizePrompt() {
+var name =prompt('What is your name?');
+>>>>>>> 6cd505e03bada01950a7ea26adb03981e09a6869
 console.log('CurrentUserName ' + name);
 alert('Hi ' + name + ' Welcome to Our Fun Guessing Game');
 alert("Please answer each question with a 'YES'/Y or 'NO'/N" );
 }
+<<<<<<< HEAD
 
 customizePrompt();
 
@@ -28,11 +35,39 @@ function petOwned() {
         alert('The answer is not valid. Please Enter YES or NO');
         console.log('petOwnedInvalid');
     }
+=======
+customizePrompt();
+
+function petOwned() {
+prompt('Do I own a pet dragon?');
+petOwned = petOwned.toUpperCase();
+console.log('petOwned is ' + petOwned);
+if(petOwned === 'YES'|| petOwned === 'Y')
+    {
+    console.log('yesreg ' + petOwned);
+    alert('No, I am not Daenerys');
+}else if(petOwned === 'NO' || petOwned === 'N')
+    {
+    console.log('petOwnedNeg ' + petOwned);
+    alert('Sadly, that is the right answer');
+    correctAnswersTotal++;
+}else{
+    alert('The answer is not valid. Please Enter YES or NO');
+    console.log('petOwnedInvalid');
+>>>>>>> 6cd505e03bada01950a7ea26adb03981e09a6869
+}
 }
 
+<<<<<<< HEAD
 petOwned();
 
 var runMileage = prompt('Have I ran over 50 milese in one day?');
+=======
+petowned();
+
+function runMileage() {
+ prompt('Have I ran over 50 milese in one day?');
+>>>>>>> 6cd505e03bada01950a7ea26adb03981e09a6869
 runMileage = runMileage.toUpperCase();
 console.log('runMileage is ' + runMileage);
 if(runMileage === 'YES'|| runMileage === 'Y')
@@ -47,6 +82,7 @@ if(runMileage === 'YES'|| runMileage === 'Y')
 }else{
     alert('The answer is not valid. Please Enter YES or NO');
     console.log('runMileageInvalid');
+}
 }
 
 var myColor = prompt('Do I like the color red?');
