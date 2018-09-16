@@ -2,21 +2,18 @@
 
 var correctAnswersTotal = 0;
 
-<<<<<<< HEAD
-function customizePrompt() {
-var name = prompt('What is your name?');
-=======
 
 function customizePrompt() {
-var name =prompt('What is your name?');
->>>>>>> 6cd505e03bada01950a7ea26adb03981e09a6869
+var name = prompt('What is your name?');
 console.log('CurrentUserName ' + name);
 alert('Hi ' + name + ' Welcome to Our Fun Guessing Game');
 alert("Please answer each question with a 'YES'/Y or 'NO'/N" );
+
 }
-<<<<<<< HEAD
+
 
 customizePrompt();
+
 
 function petOwned() {
     prompt('Do I own a pet dragon?');
@@ -35,7 +32,7 @@ function petOwned() {
         alert('The answer is not valid. Please Enter YES or NO');
         console.log('petOwnedInvalid');
     }
-=======
+}
 customizePrompt();
 
 function petOwned() {
@@ -54,20 +51,13 @@ if(petOwned === 'YES'|| petOwned === 'Y')
 }else{
     alert('The answer is not valid. Please Enter YES or NO');
     console.log('petOwnedInvalid');
->>>>>>> 6cd505e03bada01950a7ea26adb03981e09a6869
 }
 }
 
-<<<<<<< HEAD
-petOwned();
-
-var runMileage = prompt('Have I ran over 50 milese in one day?');
-=======
 petowned();
 
 function runMileage() {
  prompt('Have I ran over 50 milese in one day?');
->>>>>>> 6cd505e03bada01950a7ea26adb03981e09a6869
 runMileage = runMileage.toUpperCase();
 console.log('runMileage is ' + runMileage);
 if(runMileage === 'YES'|| runMileage === 'Y')
